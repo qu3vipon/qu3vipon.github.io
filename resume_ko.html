@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>신동현 이력서</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+        max-width: 860px;
+        margin: 40px auto;
+        padding: 0 16px 72px;
+        line-height: 1.68;
+        color: #111;
+        background: #fff;
+      }
+      header {
+        position: relative;
+        border-bottom: 2px solid #222;
+        padding-bottom: 12px;
+        margin-bottom: 28px;
+        text-align: center;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 2rem;
+      }
+      header p {
+        margin: 4px 0 0;
+        font-size: 0.95rem;
+      }
+      nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      nav a {
+        font-size: 0.85rem;
+        color: #0645ad;
+        text-decoration: underline;
+      }
+      section {
+        padding-top: 18px;
+        margin-top: 18px;
+        border-top: 1px solid #222;
+      }
+      section:first-of-type {
+        border-top: none;
+        padding-top: 0;
+        margin-top: 0;
+      }
+      section > h2 {
+        font-size: 1.65rem;
+        margin: 0 0 14px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+      .entry {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        margin-top: 18px;
+      }
+      .entry-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+        gap: 16px 32px;
+      }
+      .entry-main {
+        flex: 1;
+      }
+      .entry-title {
+        font-weight: 700;
+        font-size: 1rem;
+      }
+      .entry-meta {
+        font-size: 0.95rem;
+        color: #333;
+      }
+      .entry-period {
+        width: 150px;
+        text-align: right;
+        font-size: 0.9rem;
+        color: #555;
+        white-space: nowrap;
+      }
+      .entry.compact .entry-period {
+        width: 110px;
+        font-size: 0.85rem;
+      }
+      .entry.no-period .entry-period {
+        display: none;
+      }
+      ul {
+        margin: 8px 0 0 20px;
+        padding: 0;
+      }
+      li {
+        margin-bottom: 6px;
+      }
+      a {
+        color: #0645ad;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>신동현</h1>
+          <p>qu3vipon@gmail.com | GitHub: qu3vipon | 서울특별시</p>
+      <nav>
+        <a href="index.html">English Version</a>
+      </nav>
+    </header>
+
+    <section>
+      <h2>경력</h2>
+      <div class="entry">
+        <div class="entry-main">
+          <div class="entry-title">테크 리드 (Part-Time Advisor)</div>
+          <div class="entry-meta">이삼사일 / 습관 기반 헬스케어 서비스</div>
+          <ul>
+            <li>파운딩 엔지니어로 참여하여 예비창업패키지·2026년 청년창업사관학교 최종 합격</li>
+            <li>FastAPI·Flutter 기반 백엔드·모바일 풀스택 개발</li>
+            <li>기술 아키텍처 의사결정과 소규모 개발팀 운영을 리드</li>
+            <li>Celery Lunch, Keepoloy 앱(App Store·Google Play) 2종 출시 및 운영</li>
+          </ul>
+        </div>
+        <div class="entry-period">2025.07 ~ 2026.03</div>
+      </div>
+      <div class="entry">
+        <div class="entry-main">
+          <div class="entry-title">대표 &amp; 공동 창업자</div>
+          <div class="entry-meta">아웃라이어즈 / 공동 창업(MVP 단계)</div>
+          <ul>
+            <li>프로젝트 관리·경력 인증·피드백 수집·멘토링·성인 수학 교육 등 5종 MVP 기획 및 개발</li>
+            <li>각 MVP를 베타 서비스로 런칭하고 고객 피드백 실험을 운영</li>
+          </ul>
+        </div>
+        <div class="entry-period">2024.02 ~ 2025.07</div>
+      </div>
+      <div class="entry">
+        <div class="entry-main">
+          <div class="entry-title">백엔드 엔지니어</div>
+          <div class="entry-meta">토스 증권(NoOps팀) / 금융 플랫폼(증권)</div>
+          <ul>
+            <li>No-Code 어드민에 Audit Logging 기능을 추가해 운영 투명성 강화</li>
+            <li>멀티테넌트 배포 프로세스를 고도화해 K8s 배포 자동화를 개선</li>
+          </ul>
+        </div>
+        <div class="entry-period">2023.12 ~ 2024.02</div>
+      </div>
+      <div class="entry">
+        <div class="entry-main">
+          <div class="entry-title">백엔드 엔지니어 &amp; 팀 리드</div>
+          <div class="entry-meta">Asleep / AI 기반 수면 분석 헬스케어 서비스</div>
+          <ul>
+            <li>호흡음 기반 AI 수면 분석 및 수면 리포트 생성 등 핵심 기능 개발</li>
+            <li>Stable Diffusion 기반 Generative AI 서빙 아키텍처 설계·구현</li>
+            <li>MySQL CDC 기반 데이터 분석 환경 및 데이터 파이프라인 구축</li>
+            <li>클라우드 인프라 운영 및 Thread Pool 튜닝을 통한 비용 최적화</li>
+          </ul>
+        </div>
+        <div class="entry-period">2022.08 ~ 2023.11</div>
+      </div>
+      <div class="entry">
+        <div class="entry-main">
+          <div class="entry-title">백엔드 엔지니어</div>
+          <div class="entry-meta">ABLY(광고 사업팀) / 패션 커머스 플랫폼</div>
+          <ul>
+            <li>일 광고 매출 1억 원 달성 및 월 단위 BEP 달성</li>
+            <li>광고 노출·비용 차감·정산·통계 등 핵심 광고 시스템 개발</li>
+            <li>CTR 예측 및 추천 모델 A/B 테스트를 통한 광고 성과 개선</li>
+            <li>쿼리·인덱스 튜닝 및 집계 테이블 최적화를 통한 대시보드 성능 개선</li>
+          </ul>
+        </div>
+        <div class="entry-period">2022.01 ~ 2022.08</div>
+      </div>
+      <div class="entry">
+        <div class="entry-main">
+          <div class="entry-title">백엔드 엔지니어</div>
+          <div class="entry-meta">행파이브 / 글로벌 소셜 매칭 플랫폼</div>
+          <ul>
+            <li>시드 투자 전 첫 번째 엔지니어로 합류</li>
+            <li>친구 매칭·사주 풀이·커뮤니티 등 MVP 핵심 기능 설계·구현</li>
+            <li>MVP 개발 리드를 통해 TIPS 선정 및 초기 지표 확보에 기여</li>
+            <li>iOS·Android 크로스 플랫폼 In-App 결제 시스템 구축</li>
+          </ul>
+        </div>
+        <div class="entry-period">2020.08 ~ 2021.12</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>학력</h2>
+      <div class="entry">
+        <div class="entry-main">
+          <div class="entry-title">컴퓨터 공학 (4학년)</div>
+          <div class="entry-meta">독학 학위제</div>
+        </div>
+        <div class="entry-period">2021.06 ~ 현재</div>
+      </div>
+      <div class="entry">
+        <div class="entry-main">
+          <div class="entry-title">경제학 (3학년 중퇴)</div>
+          <div class="entry-meta">연세대학교 신촌 캠퍼스</div>
+        </div>
+        <div class="entry-period">2011.03 ~ 2018.02</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>수상</h2>
+      <div class="entry compact">
+        <div class="entry-main">
+          <div class="entry-title">AWS Startup Security Gameday 우승</div>
+          <div class="entry-meta">
+            <a href="https://zdnet.co.kr/view/?no=20230510143513" target="_blank" rel="noreferrer"
+              >한국 스타트업 14개 팀 중 1위</a
+            >
+          </div>
+        </div>
+        <div class="entry-period">2023.04</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>자격증</h2>
+      <div class="entry compact">
+        <div class="entry-main">
+          <div class="entry-title">CKAD: Certified Kubernetes Application Developer</div>
+          <div class="entry-meta">
+            <a href="https://www.credly.com/badges/37c77952-403f-420a-a51e-271b8af2363f" target="_blank" rel="noreferrer"
+              >Credly 인증서</a
+            >
+          </div>
+        </div>
+        <div class="entry-period">2023.12 ~ 2026.12</div>
+      </div>
+      <div class="entry compact">
+        <div class="entry-main">
+          <div class="entry-title">AWS Certified Database – Specialty (DBS-C01)</div>
+          <div class="entry-meta">
+            <a href="https://www.credly.com/badges/164153ec-de28-4ebb-9350-20699f6190a1" target="_blank" rel="noreferrer"
+              >Credly 인증서</a
+            >
+          </div>
+        </div>
+        <div class="entry-period">2023.07 ~ 2026.07</div>
+      </div>
+      <div class="entry compact">
+        <div class="entry-main">
+          <div class="entry-title">AWS Certified Developer – Associate (DVA-C02)</div>
+          <div class="entry-meta">
+            <a href="https://www.credly.com/badges/7e5145da-840c-46a7-9167-a71f66fdeff9" target="_blank" rel="noreferrer"
+              >Credly 인증서</a
+            >
+          </div>
+        </div>
+        <div class="entry-period">2023.04 ~ 2026.04</div>
+      </div>
+      <div class="entry compact">
+        <div class="entry-main">
+          <div class="entry-title">AWS Certified Solutions Architect – Associate (SAA-C03)</div>
+          <div class="entry-meta">
+            <a href="https://www.credly.com/badges/421519e2-ede6-470b-8653-e4168f179320" target="_blank" rel="noreferrer"
+              >Credly 인증서</a
+            >
+          </div>
+        </div>
+        <div class="entry-period">2022.12 ~ 2025.12</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>발표</h2>
+      <div class="entry compact">
+        <div class="entry-main">
+          <div class="entry-title">PyCon Korea 2023 Speaker</div>
+          <div class="entry-meta">Python DDD</div>
+        </div>
+        <div class="entry-period">2023.08</div>
+      </div>
+      <div class="entry compact">
+        <div class="entry-main">
+          <div class="entry-title">PyCon Korea 2022 Speaker</div>
+          <div class="entry-meta">SQL을 이해하고 사용하는 Django ORM</div>
+        </div>
+        <div class="entry-period">2022.08</div>
+      </div>
+      <div class="entry compact">
+        <div class="entry-main">
+          <div class="entry-title">PyCon Korea 2021 Speaker</div>
+          <div class="entry-meta">API Response 효율적으로 테스트하기</div>
+        </div>
+        <div class="entry-period">2021.10</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>강의</h2>
+      <div class="entry">
+        <div class="entry-main">
+          <div class="entry-title">오즈코딩스쿨</div>
+          <div class="entry-meta">
+            <ul>
+              <li>Python·AWS·데이터베이스 오프라인 실무 강의</li>
+              <li>FastAPI·Django·AWS·AI 모델 서버 온라인 실시간 강의</li>
+            </ul>
+          </div>
+        </div>
+        <div class="entry-period">2024.10 ~ 현재</div>
+      </div>
+      <div class="entry">
+        <div class="entry-main">
+          <div class="entry-title">인프런</div>
+          <div class="entry-meta">FastAPI·Django·Redis·데이터베이스 온라인 강의 제작</div>
+        </div>
+        <div class="entry-period">2023.07 ~ 현재</div>
+      </div>
+      <div class="entry">
+        <div class="entry-main">
+          <div class="entry-title">멀티캠퍼스</div>
+          <div class="entry-meta">데이터베이스·SQL 실무 온라인 강의 제작</div>
+        </div>
+        <div class="entry-period">2025.07 ~ 현재</div>
+      </div>
+      <div class="entry">
+        <div class="entry-main">
+          <div class="entry-title">스파르타 코딩 클럽</div>
+          <div class="entry-meta">Python·Django·알고리즘·AI 온라인 튜터</div>
+        </div>
+        <div class="entry-period">2024.07 ~ 2025.03</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>기술</h2>
+      <div class="entry-grid">
+        <div class="entry no-period">
+          <div class="entry-main">
+            <div class="entry-title">Backend</div>
+            <div class="entry-meta">
+              <ul>
+                <li>Python(FastAPI, Django), Rust</li>
+                <li>Database: MySQL, PostgreSQL</li>
+                <li>NoSQL: Redis, MongoDB</li>
+                <li>Kafka</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="entry no-period">
+          <div class="entry-main">
+            <div class="entry-title">DevOps</div>
+            <div class="entry-meta">
+              <ul>
+                <li>IaC: AWS CDK, Terraform</li>
+                <li>Cloud: AWS</li>
+                <li>Kubernetes</li>
+                <li>CI/CD: GitHub Actions, Jenkins</li>
+                <li>Monitoring: Datadog</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="entry no-period">
+          <div class="entry-main">
+            <div class="entry-title">Frontend</div>
+            <div class="entry-meta">
+              <ul>
+                <li>TypeScript(Next.js)</li>
+                <li>Flutter(Dart)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="entry no-period">
+          <div class="entry-main">
+            <div class="entry-title">언어</div>
+            <div class="entry-meta">
+              <ul>
+                <li>한국어(모국어)</li>
+                <li>영어(중급)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
