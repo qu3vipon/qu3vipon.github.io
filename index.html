@@ -3,392 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Donghyun Shin - Resume</title>
+    <title>Dong-hyeon Shin</title>
     <style>
-      * {
-        box-sizing: border-box;
-      }
       body {
-        font-family: 'Arial', 'Helvetica Neue', sans-serif;
-        max-width: 860px;
-        margin: 40px auto;
-        padding: 0 16px 72px;
-        line-height: 1.68;
-        color: #111;
-        background: #fff;
+        margin: 0;
+        min-height: 100vh;
+        font-family: 'Inter', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+        background: #0f1115;
+        color: #f5f5f5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
-      header {
-        position: relative;
-        border-bottom: 2px solid #222;
-        padding-bottom: 12px;
-        margin-bottom: 28px;
+      main {
+        width: min(420px, 90vw);
+        padding: 2.5rem;
+        background: rgba(255, 255, 255, 0.02);
+        border-radius: 24px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
         text-align: center;
       }
-      header h1 {
-        margin: 0;
-        font-size: 2rem;
+      img {
+        width: 112px;
+        height: 112px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 1.5rem;
+        border: 2px solid rgba(255, 255, 255, 0.2);
       }
-      header p {
-        margin: 4px 0 0;
-        font-size: 0.95rem;
-      }
-      nav {
-        position: absolute;
-        top: 0;
-        right: 0;
-      }
-      nav a {
-        font-size: 0.85rem;
-        color: #0645ad;
-        text-decoration: underline;
-      }
-      section {
-        padding-top: 18px;
-        margin-top: 18px;
-        border-top: 1px solid #222;
-      }
-      section:first-of-type {
-        border-top: none;
-        padding-top: 0;
-        margin-top: 0;
-      }
-      section > h2 {
-        font-size: 1.65rem;
-        margin: 0 0 14px;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-      }
-      .entry {
-        display: flex;
-        justify-content: space-between;
-        gap: 24px;
-        margin-top: 18px;
-      }
-      .entry-main {
-        flex: 1;
-      }
-      .entry-title {
-        font-weight: 700;
-        font-size: 1rem;
-      }
-      .entry-meta {
-        font-size: 0.95rem;
-        color: #333;
-      }
-      .entry-period {
-        width: 150px;
-        text-align: right;
-        font-size: 0.9rem;
-        color: #555;
-        white-space: nowrap;
-      }
-      .entry.compact .entry-period {
-        width: 110px;
-        font-size: 0.85rem;
-      }
-      .entry.no-period .entry-period {
-        display: none;
-      }
-      .entry-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-        gap: 16px 32px;
+      h1 {
+        margin: 0 0 0.8rem;
+        font-family: 'Sora', 'Noto Sans KR', sans-serif;
+        font-size: 2.15rem;
+        letter-spacing: 0.02em;
       }
       ul {
-        margin: 8px 0 0 20px;
+        list-style: none;
         padding: 0;
+        margin: 1.5rem auto 0;
+        line-height: 1.8;
+        text-align: left;
+        display: inline-block;
       }
       li {
-        margin-bottom: 6px;
+        padding-left: 1.2rem;
+        position: relative;
+        margin: 0.35rem 0;
       }
-      a {
-        color: #0645ad;
+      li::before {
+        content: '';
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #9ac5ff;
+        position: absolute;
+        left: 0;
+        top: 0.85rem;
+      }
+      .cta {
+        margin-top: 1.5rem;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        font-size: 0.95rem;
+      }
+      .cta a {
+        color: inherit;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+        padding-bottom: 0.1rem;
       }
     </style>
   </head>
   <body>
-    <header>
+    <main>
+      <img src="profile.png" alt="Dong-hyeon Shin" />
       <h1>Dong-hyeon Shin</h1>
-      <p>qu3vipon@gmail.com | GitHub: qu3vipon | Seoul</p>
-      <nav>
-        <a href="resume_ko.html">한국어 이력서</a>
-      </nav>
-    </header>
-
-    <section>
-      <h2>Experience</h2>
-      <div class="entry">
-        <div class="entry-main">
-          <div class="entry-title">Tech Lead (Part-Time Advisor)</div>
-          <div class="entry-meta">2341 / Habit-Based Healthcare Service</div>
-          <ul>
-            <li>Joined as a founding engineer and secured both the Pre-Startup Support Program and the 2026 Korea Youth Startup Academy selections</li>
-            <li>Led backend/mobile full-stack development with FastAPI and Flutter</li>
-            <li>Guided technical architecture decisions and ran a small engineering team</li>
-            <li>Launched and operated two apps, Celery Lunch and Keepoloy, on App Store & Google Play</li>
-          </ul>
-        </div>
-        <div class="entry-period">2025.07 – 2026.03</div>
+      <ul>
+        <li>Software Engineer</li>
+        <li>3× AWS Certified · CKAD</li>
+        <li>Based in Seoul, Korea</li>
+        <li>6 years of experience</li>
+      </ul>
+      <div class="cta">
+        <a href="resume_ko.html">🇰🇷 한국어 이력서</a>
+        <a href="resume_en.html">🇺🇸 English Resume</a>
       </div>
-      <div class="entry">
-        <div class="entry-main">
-          <div class="entry-title">Co-founder & CEO</div>
-          <div class="entry-meta">Outliers / Early-Stage Startup (MVP Phase)</div>
-          <ul>
-            <li>Planned and built five MVPs: project management tool, reputation check via career verification, product feedback collector, mentoring platform, and math education for adults</li>
-            <li>Launched each MVP as a beta service and ran customer feedback experiments</li>
-          </ul>
-        </div>
-        <div class="entry-period">2024.02 – 2025.07</div>
-      </div>
-      <div class="entry">
-        <div class="entry-main">
-          <div class="entry-title">Backend Engineer</div>
-          <div class="entry-meta">Toss Securities (NoOps Team) / Financial Platform</div>
-          <ul>
-            <li>Added audit logging to the no-code admin platform to improve operational transparency</li>
-            <li>Enhanced the multi-tenant deployment process to improve K8s automation</li>
-          </ul>
-        </div>
-        <div class="entry-period">2023.12 – 2024.02</div>
-      </div>
-      <div class="entry">
-        <div class="entry-main">
-          <div class="entry-title">Backend Engineer & Team Lead</div>
-          <div class="entry-meta">Asleep / AI-Powered Sleep Analysis Healthcare Service</div>
-          <ul>
-            <li>Built core features such as respiration-based AI sleep analysis and automated sleep reports</li>
-            <li>Designed and implemented a Stable Diffusion-based generative AI serving architecture</li>
-            <li>Established a MySQL CDC-driven analytics stack and data pipeline</li>
-            <li>Operated cloud infrastructure and optimized costs through thread-pool tuning</li>
-          </ul>
-        </div>
-        <div class="entry-period">2022.08 – 2023.11</div>
-      </div>
-      <div class="entry">
-        <div class="entry-main">
-          <div class="entry-title">Backend Engineer</div>
-          <div class="entry-meta">ABLY (Advertising Team) / Fashion Commerce Platform</div>
-          <ul>
-            <li>Achieved KRW 100M daily ad revenue and monthly break-even</li>
-            <li>Developed ad delivery, cost deduction, settlement, and analytics systems</li>
-            <li>Improved ad performance via CTR prediction and recommendation A/B tests</li>
-            <li>Optimized dashboards through query/index tuning and aggregate-table redesign</li>
-          </ul>
-        </div>
-        <div class="entry-period">2022.01 – 2022.08</div>
-      </div>
-      <div class="entry">
-        <div class="entry-main">
-          <div class="entry-title">Backend Engineer</div>
-          <div class="entry-meta">HangFive / Global Social Matching Platform</div>
-          <ul>
-            <li>Joined as the first engineer before seed funding</li>
-            <li>Designed and implemented core MVP features such as friend matching, fortune reading, and community</li>
-            <li>Led MVP development that contributed to TIPS selection and early metrics</li>
-            <li>Built cross-platform in-app purchases for iOS and Android</li>
-          </ul>
-        </div>
-        <div class="entry-period">2020.08 – 2021.12</div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Education</h2>
-      <div class="entry">
-        <div class="entry-main">
-          <div class="entry-title">Computer Science (Senior Year)</div>
-          <div class="entry-meta">Self-Paced Degree Program</div>
-        </div>
-        <div class="entry-period">2021.06 – Present</div>
-      </div>
-      <div class="entry">
-        <div class="entry-main">
-          <div class="entry-title">Economics (Withdrew in Junior Year)</div>
-          <div class="entry-meta">Yonsei University, Sinchon Campus</div>
-        </div>
-        <div class="entry-period">2011.03 – 2018.02</div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Awards</h2>
-      <div class="entry compact">
-        <div class="entry-main">
-          <div class="entry-title">AWS Startup Security Gameday Winner</div>
-          <div class="entry-meta">
-            <a href="https://zdnet.co.kr/view/?no=20230510143513" target="_blank" rel="noreferrer"
-              >1st among 14 Korean startup teams</a
-            >
-          </div>
-        </div>
-        <div class="entry-period">2023.04</div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Certifications</h2>
-      <div class="entry compact">
-        <div class="entry-main">
-          <div class="entry-title">CKAD: Certified Kubernetes Application Developer</div>
-          <div class="entry-meta">
-            <a href="https://www.credly.com/badges/37c77952-403f-420a-a51e-271b8af2363f" target="_blank" rel="noreferrer"
-              >Credly Certificate</a
-            >
-          </div>
-        </div>
-        <div class="entry-period">2023.12 – 2026.12</div>
-      </div>
-      <div class="entry compact">
-        <div class="entry-main">
-          <div class="entry-title">AWS Certified Database – Specialty (DBS-C01)</div>
-          <div class="entry-meta">
-            <a href="https://www.credly.com/badges/164153ec-de28-4ebb-9350-20699f6190a1" target="_blank" rel="noreferrer"
-              >Credly Certificate</a
-            >
-          </div>
-        </div>
-        <div class="entry-period">2023.07 – 2026.07</div>
-      </div>
-      <div class="entry compact">
-        <div class="entry-main">
-          <div class="entry-title">AWS Certified Developer – Associate (DVA-C02)</div>
-          <div class="entry-meta">
-            <a href="https://www.credly.com/badges/7e5145da-840c-46a7-9167-a71f66fdeff9" target="_blank" rel="noreferrer"
-              >Credly Certificate</a
-            >
-          </div>
-        </div>
-        <div class="entry-period">2023.04 – 2026.04</div>
-      </div>
-      <div class="entry compact">
-        <div class="entry-main">
-          <div class="entry-title">AWS Certified Solutions Architect – Associate (SAA-C03)</div>
-          <div class="entry-meta">
-            <a href="https://www.credly.com/badges/421519e2-ede6-470b-8653-e4168f179320" target="_blank" rel="noreferrer"
-              >Credly Certificate</a
-            >
-          </div>
-        </div>
-        <div class="entry-period">2022.12 – 2025.12</div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Talks</h2>
-      <div class="entry compact">
-        <div class="entry-main">
-          <div class="entry-title">PyCon Korea 2023 Speaker</div>
-          <div class="entry-meta">Python DDD</div>
-        </div>
-        <div class="entry-period">2023.08</div>
-      </div>
-      <div class="entry compact">
-        <div class="entry-main">
-          <div class="entry-title">PyCon Korea 2022 Speaker</div>
-          <div class="entry-meta">Django ORM with SQL Awareness</div>
-        </div>
-        <div class="entry-period">2022.08</div>
-      </div>
-      <div class="entry compact">
-        <div class="entry-main">
-          <div class="entry-title">PyCon Korea 2021 Speaker</div>
-          <div class="entry-meta">Testing APIs with Practical Response Patterns</div>
-        </div>
-        <div class="entry-period">2021.10</div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Teaching</h2>
-      <div class="entry">
-        <div class="entry-main">
-          <div class="entry-title">Oz Coding School</div>
-          <div class="entry-meta">
-            <ul>
-              <li>In-person courses on Python, AWS, and databases</li>
-              <li>Live online courses on FastAPI, Django, AWS, and AI model serving</li>
-            </ul>
-          </div>
-        </div>
-        <div class="entry-period">2024.10 – Present</div>
-      </div>
-      <div class="entry">
-        <div class="entry-main">
-          <div class="entry-title">Inflearn</div>
-          <div class="entry-meta">Produced online courses on FastAPI, Django, Redis, and databases</div>
-        </div>
-        <div class="entry-period">2023.07 – Present</div>
-      </div>
-      <div class="entry">
-        <div class="entry-main">
-          <div class="entry-title">Multicampus</div>
-          <div class="entry-meta">Produced online courses on database and SQL for practitioners</div>
-        </div>
-        <div class="entry-period">2025.07 – Present</div>
-      </div>
-      <div class="entry">
-        <div class="entry-main">
-          <div class="entry-title">Sparta Coding Club</div>
-          <div class="entry-meta">Online tutoring on Python, Django, algorithms, and AI</div>
-        </div>
-        <div class="entry-period">2024.07 – 2025.03</div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Skills</h2>
-      <div class="entry-grid">
-        <div class="entry no-period">
-          <div class="entry-main">
-            <div class="entry-title">Backend</div>
-            <div class="entry-meta">
-              <ul>
-                <li>Python (FastAPI, Django), Rust</li>
-                <li>Databases: MySQL, PostgreSQL</li>
-                <li>NoSQL: Redis, MongoDB</li>
-                <li>Kafka</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="entry no-period">
-          <div class="entry-main">
-            <div class="entry-title">DevOps</div>
-            <div class="entry-meta">
-              <ul>
-                <li>IaC: AWS CDK, Terraform</li>
-                <li>Cloud: AWS</li>
-                <li>Kubernetes</li>
-                <li>CI/CD: GitHub Actions, Jenkins</li>
-                <li>Monitoring: Datadog</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="entry no-period">
-          <div class="entry-main">
-            <div class="entry-title">Frontend</div>
-            <div class="entry-meta">
-              <ul>
-                <li>TypeScript (Next.js)</li>
-                <li>Flutter (Dart)</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="entry no-period">
-          <div class="entry-main">
-            <div class="entry-title">Languages</div>
-            <div class="entry-meta">
-              <ul>
-                <li>Korean (native)</li>
-                <li>English (intermediate)</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    </main>
   </body>
 </html>
